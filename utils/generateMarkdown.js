@@ -88,9 +88,8 @@ function generateMarkdown(answers, user) {
   [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
   ---
   ## FAQ
-  - **How do I initialize the code?**
-    - ${answers.FAQ1}
   - **How can I contact you if I have any further questions?**
+    - ${answers.FAQ1}
     - ${answers.email}
   ---
   ## Number of contributors

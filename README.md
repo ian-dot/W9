@@ -1,9 +1,9 @@
 
-  [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
+  [![License](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
-  # MDG
+  # Markdown Generator
   ## Description 
-  generates MD
+  This app will allow you to create MD files.
   ---
   ## Table of Contents
   ---
@@ -16,15 +16,14 @@
   * [Contributing](#contributing)
   ---
   ## Installation
-  node index.js
+  run node index.js in your terminal.
   ---
   ## Usage 
   homework
-  ---
-  ## License
+  ---  
   
-## License
-The license used for this project: MIT
+  ## License
+  The license used for this project: MIT
   ---
   ## Credits
   1 Contributors
@@ -33,10 +32,11 @@ The license used for this project: MIT
   [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
   ---
   ## FAQ
-  - **How do I initialize the code?**
-    - mail
   - **How can I contact you if I have any further questions?**
-    - ian@ian.com
+    - Via gmail:
+    - egian93@gmail.com
   ---
   ## Number of contributors
   - 1
+  ## Video tutorial
+  - https://drive.google.com/file/d/1OZG-4w0KCN41IFeSnSEJGtrONdn-sOb-/view?usp=sharing

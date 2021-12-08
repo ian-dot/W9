@@ -3,18 +3,26 @@ function renderLicenseBadge(License) {
     switch (License) {
         case "":
             return "";
+            break;
 
         case "MIT":
-            return `[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)]${renderLicenseLink(License)}`;
+            return `[![License](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)]${renderLicenseLink(License)}`;
+            break;
 
         case "Apache":
             return `[![License](https:img.shields.io/badge/License-Apache%202.0-blue.svg)]${renderLicenseLink(License)}`;
+            break;
 
         case "Mozilla":
             return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]${renderLicenseLink(License)}`;
+            break;
 
         case "GNU GPL v3":
             return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]${renderLicenseLink(License)}`;
+            break;
+        
+        default:
+            console.log('default');
 
         
     }
@@ -43,20 +51,18 @@ if (License == "") {
     return "";
 } 
 return `
-## License
-The license used for this project: ${License}`;
+  ## License
+  The license used for this project: ${License}`;
 }
 
 function generateMarkdown(answers, user) {
     return `
-    
-    # Github
-    ### GitHub: https://github.com/${answers.GitHubUsername}
-  ---
-    # ${answers.ProjectTitle}
+  ${renderLicenseBadge(answers.License)}
+
+  # ${answers.ProjectTitle}
   ## Description 
-  ---
   ${answers.ProjectDescription}
+  ---
   ## Table of Contents
   ---
   * [Installation](#installation)
@@ -68,13 +74,12 @@ function generateMarkdown(answers, user) {
   * [Contributing](#contributing)
   ---
   ## Installation
-  ${answers.Install}
+  ${answers.Installation}
   ---
   ## Usage 
   ${answers.Usage}
-  ---
-  ## License
-  ${answers.License}
+  ---  
+  ${renderLicenseSection(answers.License)}
   ---
   ## Credits
   ${answers.Contributors} Contributors

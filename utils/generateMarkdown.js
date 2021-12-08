@@ -49,9 +49,9 @@ The license used for this project: ${License}`;
 
 function generateMarkdown(answers, user) {
     return `
-    ![](${user.avatar_url})
-    # ${user.name}
-    ### [E-mail Me Here!](${user.email})
+    
+    # Github
+    ### GitHub: https://github.com/${answers.GitHubUsername}
   ---
     # ${answers.ProjectTitle}
   ## Description 
@@ -86,9 +86,10 @@ function generateMarkdown(answers, user) {
   - **How do I initialize the code?**
     - ${answers.FAQ1}
   - **How can I contact you if I have any further questions?**
-    - ${user.email}
+    - ${answers.email}
   ---
-  ## Contributing
+  ## Number of contributors
+  - ${answers.Contributors}
 `
 }  
 

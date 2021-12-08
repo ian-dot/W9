@@ -8,44 +8,38 @@ const questions = [
     {
         type: "input",
         name: "GitHubUsername",
-        message: "What is your GitHub Username?"
+        message: "Type in your GitHub username"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Type in your email"
     },
     {
         type: "input",
         name: "ProjectTitle",
-        message: "What would you like your Project Title to be named?"
+        message: "What is your Project Title name?"
     },
     {
         type: "input",
         name: "ProjectDescription",
-        message: "Please write a short description of your project."
+        message: "Write a brief description of your project"
     },
     {
         type: "input",
-        name: "Install",
-        message: "What are the steps required to install your project?"
+        name: "Installation",
+        message: "What are the steps to install your application?"
     },
     {
         type: "input",
         name: "Usage",
-        message: "Please provide examples of how your project could be used."
+        message: "Enter some examples of how your project is used"
     },
     {
         type: "list",
         name: "License",
-        message: "Choose what license you would like to use for your project.",
-        choices: [{
-            name: "GNU General Public License v3.0",
-            },
-            {
-            name: "MIT License"
-            },
-            {
-            name: "The Unlicense"
-            },
-            {
-            name: "Apache License 2.0"
-            }]
+        message: "Choose a license for your project",
+        choices: ["Apache", "GNU GPL v3", "Mozilla", "MIT"]
     },
     {
         type: "input",
@@ -55,8 +49,13 @@ const questions = [
     },
     {
         type: "input",
+        message: "Test: please write tests and examples on how to run them",
+        name: "test", //user input stored here
+      },
+    {
+        type: "input",
         name: "FAQ1",
-        message: "How do you initialize the project?"
+        message: "Enter contact info to reach you in case of having questions"
     }
 
 ];

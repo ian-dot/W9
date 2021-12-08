@@ -1,0 +1,17 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homeworkW9"
+  ],
+  "author": "ian-dot",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
